@@ -1,3 +1,23 @@
+from scipy import constants, signal
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.misc import derivative
+pi = constants.pi
+m_e = constants.m_e
+k_b = constants.k
+h = constants.h 
+
+# 2d parameters
+hbar = constants.hbar
+e = constants.e
+hbar_ev = hbar/e
+gamma1 = 0.4
+Vf0 = 1e6 # charge mobility
+er = 3.6
+tbg = 20e-9
+W = 50e-9 # width of the 1D structure
+epsilon_0 = constants.epsilon_0
+
 def dRdu(R):
     """
     Parameters:
